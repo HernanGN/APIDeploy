@@ -3,7 +3,7 @@ require("dotenv").config()
 require("./data/config")
 
 //const port = process.env.port || 8000
-//const port = process.env.port
+const PORT = process.env.PORT
 
 const express = require("express")
 
@@ -11,7 +11,7 @@ const path = require("path")
 
 const hbs = require("express-handlebars")
 
-const { restart } = require("nodemon")
+//const { restart } = require("nodemon")
 
 const server = express()
 
@@ -63,5 +63,5 @@ server.use((error, req, res, next) => {
 })
 
 server.listen(port, (err) => {
-    err ? console.log(`Error: ${err}`) : console.log(`App corre en http://localhost:${port}`)
+    err ? console.log(`Error: ${err}`) : console.log(`App corre en puerto:${PORT}`)
 });
