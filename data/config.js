@@ -10,6 +10,7 @@ const pool = mysql.createPool({
     host: process.env.db_host,
     database: process.env.db_name,
     user: process.env.db_user,
+    password: process.env.db_pass,
     /* Para Mac
     password: process.env.password,
     socketPath: process.env.db_socket,
