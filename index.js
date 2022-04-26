@@ -62,6 +62,6 @@ server.use((error, req, res, next) => {
     }
 })
 
-server.listen(port, (err) => {
+server.listen(PORT, (err) => {
     err ? console.log(`Error: ${err}`) : console.log(`App corre en puerto:${PORT}`)
 });
