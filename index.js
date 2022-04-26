@@ -3,7 +3,7 @@ require("dotenv").config()
 require("./data/config")
 
 //const port = process.env.port || 8000
-const port = process.env.port
+//const port = process.env.port
 
 const express = require("express")
 
@@ -11,7 +11,7 @@ const path = require("path")
 
 const hbs = require("express-handlebars")
 
-//const { restart } = require("nodemon")
+const { restart } = require("nodemon")
 
 const server = express()
 
